@@ -1,0 +1,20 @@
+{
+  "name": "playwright-pom-framework",
+  "version": "1.0.0",
+  "description": "A Playwright + TypeScript automation framework using the Page Object Model, fixtures, and storageState-based auth reuse — demonstrated end to end against the SauceDemo practice site.",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://www.saucedemo.com"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.4"
+  }
+}
